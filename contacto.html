@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Mascota</title>
+    <link rel="icon" href="image/favicon-32x32.png">
+    <link rel="stylesheet" href="contactostyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Oxygen:wght@300;400;700&family=Thasadith&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bd8bd1e195.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <a href="http://mundomascota.com.ar"><img src="image/mundomascota_g.jpg" alt="logo"></a>
+    <ul>
+    <li><a href="index.html"><i class="fa-solid fa-house"></i> HOME</a></li>
+    <li><a href="historia.html"><i class="fa-solid fa-shield-dog"></i> HISTORIA</a></li>
+    <li><a href="caracteristica.html"><i class="fa-solid fa-paw"></i> ASPECTOS</a></li>
+    <li><a href="tipos.html"><i class="fa-solid fa-dog"></i> TIPOS</a></li>
+    <li><a href="contacto.html"><i class="fa-solid fa-bars"></i> CONTACTO</a></li>
+</header>  
+<div class="formulario-de-contacto">        
+<div class="formulario">      
+    <h1>Formulario de contacto</h1>
+    <h3>Gracias por visitar nuestra página. <br> Por cualquier inquietud o dudas, escríbenos y en breve nos pondremos en contacto contigo</h3>
+    <form action="" id="form">       
+    <p>
+        <label for="nombre" class="colocar_nombre">Nombre
+        <span class="obligatorio">*</span>
+        </label>
+        <input type="nombre" name="introducir_nombre" id="nombre" placeholder="Escribe tu nombre">
+    </p>                  
+    <p>
+        <label for="email" class="colocar_email">Email
+        <span class="obligatorio">*</span>
+        </label>
+        <input type="email" name="introducir_email" id="email" placeholder="Escribe tu Email">
+    </p>            
+    <p>
+        <label for="telefone" class="colocar_telefono">Teléfono
+        </label>
+        <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+    </p>                           
+    <p>
+        <label for="asunto" class="colocar_asunto">Asunto
+        </label>
+        <input type="text" name="introducir_asunto" id="asunto" placeholder="Escribe un asunto">
+    </p>    
+    <p>
+        <label for="mensaje" class="colocar_mensaje">Mensaje
+        <span class="obligatorio">*</span>
+        </label>                     
+        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+    </p>                    
+    <button type="submit" name="enviar_formulario" id="enviar" onclick="validarEmail(email.value)"><p>Enviar</p></button>
+    <p class="aviso">
+        <span class="obligatorio"> * </span>los campos son obligatorios.
+    </p>
+    </form>
+    </div>  
+    </div><br>
+    
+<footer>
+    <div class="container-footer">
+    <div class="item">
+        <h3>Mundo Mascota</h3><br>
+        <p><i class="fa-solid fa-house"></i> Dirección : Av. San Martin 2532 <br><br> | CP 1402 |<br><br>| CABA | Buenos Aires | Argentina |</p>
+    </div>
+    <div class="item">
+        <h3>Contacto</h3><br>
+        <p><i class="fa-solid fa-envelope"></i> mundomascota@gmail.com<br><br> <i class="fa-solid fa-phone"></i> Tel: 11-2356-2596 <br><br><i class="fa-brands fa-whatsapp"></i> whatsapp : 11-1234-5628</p>
+        </div>
+    <div class="item">
+        <h3>Seguinos</h3><br>
+        <p><i class="fa-brands fa-facebook-square"></i> @mundomascota <br><br><i class="fa-brands fa-instagram"></i> @mundomascota <br><br><i class="fa-brands fa-twitter-square"></i> @mundomascota</p></div>
+    </div>  
+    <div class="container-footer-design">
+        <div class="item4"><h5>designed by: www.indesign.com.ar</h5></div>
+    </div>
+    </footer>
+    <script src="contactoscript.js"></script>  
+    </body>
+    </html>
+    
