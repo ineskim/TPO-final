@@ -13,52 +13,55 @@
     <script src="https://kit.fontawesome.com/bd8bd1e195.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<header>
-    <a href="http://mundomascota.com.ar"><img src="image/mundomascota_g.jpg" alt="logo"></a>
-    <ul>
-    <li><a href="index.html"><i class="fa-solid fa-house"></i> HOME</a></li>
-    <li><a href="historia.html"><i class="fa-solid fa-shield-dog"></i> HISTORIA</a></li>
-    <li><a href="caracteristica.html"><i class="fa-solid fa-paw"></i> ASPECTOS</a></li>
-    <li><a href="tipos.html"><i class="fa-solid fa-dog"></i> TIPOS</a></li>
-    <li><a href="contacto.html"><i class="fa-solid fa-bars"></i> CONTACTO</a></li>
-</header>  
+    <header>
+        <nav class="navbar"> 
+            <div class="logo"><a href="http://mundomascota.com.ar"><img src="image/mundomascota_g.jpg" alt="logo"></a></div>
+            <ul class="menubar">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> HOME</a></li>
+                <li><a href="historia.html"><i class="fa-solid fa-shield-dog"></i> HISTORIA</a></li>
+                <li><a href="caracteristica.html"><i class="fa-solid fa-paw"></i> ASPECTOS</a></li>
+                <li><a href="tipos.html"><i class="fa-solid fa-dog"></i> TIPOS</a></li>
+                <li><a href="contacto.html"><i class="fa-solid fa-bars"></i> CONTACTO</a></li>
+            </ul>
+        </nav>
+        </header>
 <div class="formulario-de-contacto">        
-<div class="formulario">      
-    <h1>Formulario de contacto</h1>
-    <h3>Gracias por visitar nuestra página. <br> Por cualquier inquietud o dudas, escríbenos y en breve nos pondremos en contacto contigo</h3>
+<br><br><div class="formulario">      
+    <h1>Formulario de contacto</h1><br>
+    <h3>Por cualquier inquietud, escríbenos y en breve nos pondremos en contacto contigo</h3>
+    <br><br>
     <form action="" id="form">       
-    <p>
+    <p class="input">
         <label for="nombre" class="colocar_nombre">Nombre
         <span class="obligatorio">*</span>
         </label>
         <input type="nombre" name="introducir_nombre" id="nombre" placeholder="Escribe tu nombre">
     </p>                  
-    <p>
+    <p class="input">
         <label for="email" class="colocar_email">Email
         <span class="obligatorio">*</span>
         </label>
         <input type="email" name="introducir_email" id="email" placeholder="Escribe tu Email">
     </p>            
-    <p>
+    <p class="input">
         <label for="telefone" class="colocar_telefono">Teléfono
         </label>
         <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
     </p>                           
-    <p>
+    <p class="input">
         <label for="asunto" class="colocar_asunto">Asunto
         </label>
         <input type="text" name="introducir_asunto" id="asunto" placeholder="Escribe un asunto">
-    </p>    
-    <p>
+    </p> 
+    <p class="input1">
         <label for="mensaje" class="colocar_mensaje">Mensaje
-        <span class="obligatorio">*</span>
-        </label>                     
-        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-    </p>                    
+        </label>
+        <input type="text" name="introducir_mensaje" id="mensaje" placeholder="">
+    </p>                      
     <button type="submit" name="enviar_formulario" id="enviar" onclick="validarEmail(email.value)"><p>Enviar</p></button>
     <p class="aviso">
         <span class="obligatorio"> * </span>los campos son obligatorios.
-    </p>
+    </p><br><br>
     </form>
     </div>  
     </div><br>
